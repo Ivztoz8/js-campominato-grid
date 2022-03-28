@@ -4,49 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/img/favico.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/favico.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Campo Minato</title>
 </head>
 <body>
-    <header>
-        <div class="myc_container0 padmar0box justify-content-between">
-            <div class="d-flex  row-12 align-items-center py-2">
-                <div class="col flex-fill">
-                    <img src="./assets/img/logo_boolean.png" class="myc_img_size ms-5 me-3" alt="">
-                </div> 
-                <div class="col flex-fill">
-                    <h2 class="text-white"> Campo minato</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col text-white align-self-center fw-bold">Difficoltà: </div>
-                <select class="col bg-dark text-white align-self-center border-danger form-select form-select-sm"> 
-                        <option value="1">Easy</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Hard</option>
-                </select>
-                <div class="col align-self-center">
-                    <button type="button" class="btn btn-sm btn-outline-danger ">Play</button>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="container-sm bg-danger borderrad0 p-5">
-            <div class="row ">
-                <div class="col p-5 d-flex flex-wrap justify-content-center" id="gridContainer"></div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="myc_container1 flex_util1 align-items-end">
-            <div class="text-white fw-bold ps-5 py-2 ms-5"> Made with &#9829; by Booleaner; Vans878</div>
-        </div>
-    </footer>     
-    
+      <header>
+          <div class="area-logo">
+            <img src="./assets/img/Logo.png" class="img-fluid" alt="Logo Boolean">
+            <h1>Campo minato</h1>
+          </div>
+
+          <div class="area-buttons">
+              <label>Livello di difficoltà:</label>
+            <select name="difficoltàgame" id="difficoltà">
+                <option value="facile">Facile</option>
+                <option value="media">Media</option>
+                <option value="difficile">Difficile</option>
+            </select>
+                <button id="btn">Play</button>
+          </div>
+      </header>
+      <main>
+        <p id="welcome">Benvenuto, clicca sul bottone per iniziare a giocare</p>
+          <div class="none" id="grid">
+          </div>
+      </main>
+      <footer>
+          <h3>Made with &#9829; by Boolean </h3>
+      </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>  
 </body>
